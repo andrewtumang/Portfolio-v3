@@ -438,20 +438,6 @@ body {
 }
 
 
-
-@media screen and (max-height: 650px) {
-  .jumbo-text > h {
-    font-size: 44px;
-  }
-  .jumbo-text > h1 {
-    font-size: 30px;
-  }
-  .jumbo-text > p {
-    font-size: 15px;
-  }
-}
-
-
 @media screen and (max-height: 600px) {
   .jumbo-mockup > img {
     display: none;
