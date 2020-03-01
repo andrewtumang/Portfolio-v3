@@ -125,6 +125,8 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
+  z-index: 2;
+  
   bottom: 5%;
   
   width: 100%;
