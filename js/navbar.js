@@ -11,15 +11,37 @@ function openCloseMenu() {
       itemClasses.add("open");
     }
   }
-
-
+  
   var linksClasses = document.getElementById("links").classList;
   if(linksClasses.contains("open")) {
-      linksClasses.remove("open");
+    linksClasses.remove("open");
+    var links = document.getElementsByClassName("link");
+    for (var i = 0; i < links.length; i++) {
+      var itemClasses = links.item(i).classList;
+      itemClasses.remove("open");
+      itemClasses.add("closed");
     }
-    else {
-      linksClasses.add("open");
-    }
+  }
+  else {
+    linksClasses.add("open");
+    setTimeout(function() {
+      var links = document.getElementsByClassName("link");
+      for (var i = 0; i < links.length; i++) {
+        var itemClasses = links.item(i).classList;
+        itemClasses.add("open");
+        itemClasses.remove("closed");
+      }
+    }, 100)
+  }
+  
+  var overlayClasses = document.getElementById("overlay").classList;
+  if(overlayClasses.contains("open")) {
+    overlayClasses.remove("open");
+  }
+  else {
+    overlayClasses.add("open");
+  }
+  
 }
 
 var navlinks = document.getElementsByClassName("link");

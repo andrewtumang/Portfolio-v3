@@ -373,6 +373,9 @@ p {
   .bio {
     padding: 40px 26px 40px;
   }
+  .skill-list > li {
+    margin: 0 7px 7px 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
