@@ -1,6 +1,9 @@
 /*eslint-env browser*/
 
 function openCloseMenu() {
+  var overlay = document.getElementById("overlay");
+  overlay.style.display = "block"
+  
   var bars = document.getElementsByClassName("bar");
   for (var i = 0; i < bars.length; i++) {
     var itemClasses = bars.item(i).classList;
@@ -34,9 +37,10 @@ function openCloseMenu() {
     }, 100)
   }
   
-  var overlayClasses = document.getElementById("overlay").classList;
+  var overlayClasses = overlay.classList;
   if(overlayClasses.contains("open")) {
     overlayClasses.remove("open");
+    overlay.style.display = "none";
   }
   else {
     overlayClasses.add("open");
