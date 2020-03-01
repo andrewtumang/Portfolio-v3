@@ -54,10 +54,12 @@ body {
   
   width: 700px;
   transition: 2s ease-in-out;
+  opacity: 0.0;
   transform: translate(-40px, 0px);
 }
 
 .jumbo-text.slide {
+  opacity: 1.0;
   transform: translate(0px, 0px);
 }
 
@@ -97,10 +99,12 @@ body {
   
   width: 450px;
   transition: 2s ease-in-out;
+  opacity: 0.0;
   transform: translate(20px, 0px);
 }
 
 .jumbo-mockup.slide {
+  opacity: 1.0;
   transform: translate(-20px, 0);
 }
 
@@ -353,8 +357,14 @@ body {
     padding-left: 0;
     width: 356px;
     
-    transition-duration: 0s;
-    transform: translate(0px, 0px);
+    
+    transition: 2s ease-in-out;
+    opacity: 0.0;
+    transform: translate(0px, -20px);
+  }
+  .jumbo-text.slide {
+    opacity: 1.0;
+    transform: translate(0, 0);
   }
   .jumbo-text > h {
     font-weight: 700;

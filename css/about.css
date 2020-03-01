@@ -6,8 +6,6 @@ html {
   
   height: 100%;
   width: 100%;
-  
-  overflow-x: hidden;
 }
 
 body {
@@ -42,11 +40,23 @@ body {
   
   width: 100%;
 }
-
 .portrait {
-  margin: 20px 20px 0 0;
+  margin: 0px 20px 0 0;
   
   height: 300px;
+  
+  border-radius: 5px;
+}
+
+#portrait {
+  transition: 2s ease-in-out;
+  opacity: 0.0;
+  transform: translate(0px, -20px);
+}
+
+#portrait.slide {
+  opacity: 1.0;
+  transform: translate(0, 0);
 }
 
 .general-info {
@@ -56,18 +66,26 @@ body {
 }
 
 .general-info > h {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   
   font-family: Lato, sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 37px;
+  font-size: 56px;
   color: white;
 }
 
-.surname {
-  font-size: 31px;
+#name, #age, #location, #job {
+  transition: 2s ease-in-out;
+  opacity: 0.0;
+  transform: translate(40px, 0px);
 }
+
+#name.slide, #age.slide, #location.slide, #job.slide {
+  opacity: 1.0;
+  transform: translate(0, 0);
+}
+
 
 .info {
   display: flex;
@@ -92,6 +110,17 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 16px;
+}
+
+.preload {
+  transition: 1s ease-in-out;
+  opacity: 0.0;
+  transform: translate(0, 0px);
+}
+
+.preload.slide {
+  opacity: 1.0;
+  transform: translate(0, 0);
 }
 
 /* GRID LAYOUT */
@@ -265,6 +294,12 @@ p {
   color: white;
   
   border-radius: 25px;
+  transition: 0.3s ease-out;
+  cursor: default;
+}
+
+.skill-list > li:hover {
+  transform: scale(1.05);
 }
 
 #coding-skills > li {
@@ -326,6 +361,14 @@ p {
   .header {
     margin: 0 90px 40px;
   }
+  .general-info > h {
+    margin-bottom: 20px;
+    width: 200px;
+    font-size: 50px;
+  }
+  .surname {
+    font-size: 40px;
+  }
   .grid-container {
     grid-template-columns: 90px 7fr 5fr 90px;
   }
@@ -367,6 +410,12 @@ p {
   .header {
     margin: 0 26px 40px;
   }
+  .general-info > h {
+    font-size: 45px;
+  }
+  .surname {
+    font-size: 35px;
+  }
   .grid-container {
     grid-template-columns: 26px 7fr 5fr 26px;
   }
@@ -375,6 +424,9 @@ p {
   }
   .skill-list > li {
     margin: 0 7px 7px 0;
+  }
+  .skill-list > li:hover {
+    transform: scale(1.00);
   }
 }
 
@@ -395,6 +447,9 @@ p {
   }
   .fas {
     font-size: 14px;
+  }
+  #name, #age, #location, #job {
+    transform: translate(20px, 0px);
   }
   h2 {
     font-size: 15px;
@@ -422,5 +477,8 @@ p {
 @media screen and (max-width: 410px) {
   .portrait {
     height: 240px;
+  }
+  #name, #age, #location, #job {
+    transform: translate(10px, 0px);
   }
 }

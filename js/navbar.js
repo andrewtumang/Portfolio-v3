@@ -2,7 +2,9 @@
 
 function openCloseMenu() {
   var overlay = document.getElementById("overlay");
-  overlay.style.display = "block"
+  if(window.innerWidth <= 568) {
+    overlay.style.display = "block";
+  }
   
   var bars = document.getElementsByClassName("bar");
   for (var i = 0; i < bars.length; i++) {

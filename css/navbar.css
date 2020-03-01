@@ -125,7 +125,7 @@ a:hover, a:visited, a:link, a:active {
     padding: 0px;
   }
   .bar, .links {
-    transition: 0.4s ease-out;
+    transition: 0.3s ease-out;
   }
   .home-hamburger-container {
     padding: 20px;
