@@ -31,8 +31,16 @@ footer {
 .footer-icon {
   margin-right: 10px;
   
-  width: 45px;
-  height: 45px; 
+  width: 50px;
+  height: 50px; 
+  
+  opacity: 0.8;
+  transition: 0.5s ease-out;
+}
+
+.footer-icon:hover {
+  opacity: 1.0;
+  transform: scale(1.05);
 }
 
 .footer-comment {
@@ -76,6 +84,13 @@ footer {
   }
   .footer-container {
     margin: 0 60px 0;
+  }
+  .footer-icon {
+    opacity: 1.0;
+    transition-duration: 0s;
+  }
+  .footer-icon:hover {
+    transform: scale(1.0);
   }
 }
 

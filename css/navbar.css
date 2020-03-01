@@ -1,4 +1,3 @@
-
 a:hover, a:visited, a:link, a:active {
   text-decoration: none;
 }
@@ -41,6 +40,8 @@ a:hover, a:visited, a:link, a:active {
 .links {
   display: flex;
   position: relative;
+  z-index: 1;
+  
   right: 0;
 }
 
@@ -55,6 +56,34 @@ a:hover, a:visited, a:link, a:active {
   font-style: normal;
   font-size: 20px;
   color: white;
+}
+
+.link-line {
+  position: absolute;
+  top: 35px;
+  
+  height: 2px;
+  background-color: white;
+  
+  opacity: 0.0;
+  transition: 0.3s ease-out;
+}
+
+.link:hover > .link-line {
+  top: 40px;
+  opacity: 1.0;
+}
+
+#work-line {
+  width: 50px;
+}
+
+#about-line {
+  width: 55px;
+}
+
+#contact-line {
+  width: 70px;
 }
 
 #bar1.open {
@@ -99,7 +128,6 @@ a:hover, a:visited, a:link, a:active {
   }
   .links {
     position: absolute;
-    z-index: 1;
     flex-direction: column;
     
     top: 90px;

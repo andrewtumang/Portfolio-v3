@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  
   margin: 0;
   padding: 0;
   
@@ -43,7 +44,7 @@ body {
 }
 
 .portrait {
-  margin-right: 20px;
+  margin: 20px 20px 0 0;
   
   height: 300px;
 }

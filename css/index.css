@@ -7,7 +7,6 @@ html {
   height: 100%;
   width: 100%;
   
-  overflow-x: hidden;
 }
 
 body {
@@ -54,6 +53,12 @@ body {
   padding-bottom: 130px;
   
   width: 700px;
+  transition: 2s ease-in-out;
+  transform: translate(-40px, 0px);
+}
+
+.jumbo-text.slide {
+  transform: translate(0px, 0px);
 }
 
 .jumbo-text > h {
@@ -91,7 +96,20 @@ body {
   margin-bottom: 50px;
   
   width: 450px;
+  transition: 2s ease-in-out;
+  transform: translate(20px, 0px);
 }
+
+.jumbo-mockup.slide {
+  transform: translate(-20px, 0);
+}
+
+/*
+.jumbo-mockup:hover {
+  transition: 1s ease-in-out;
+  transform: translate(-30px, -5px);
+}
+*/
 
 .jumbo-mockup>img {
   position: absolute;
@@ -117,11 +135,25 @@ body {
   width: 80px;
 }
 
+.arrow-link:hover {
+}
+
 .arrow-img {
   width: 80px;
 }
 
+.arrow-animate {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: arrow-bounce;
+  animation-timing-function: ease-in-out;
+}
 
+@keyframes arrow-bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 
 /* WORK SECTION */
 
@@ -144,7 +176,7 @@ body {
   
   transform: scale(1.00);
   filter: saturate(0.75);
-  transition: 0.3s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .work-item:hover {
@@ -319,6 +351,9 @@ body {
   .jumbo-text {
     padding-left: 0;
     width: 356px;
+    
+    transition-duration: 0s;
+    transform: translate(0px, 0px);
   }
   .jumbo-text > h {
     font-weight: 700;

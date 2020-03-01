@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/df959595e9.js" crossorigin="anonymous"></script>
   </head>
 <body>
-  <div class="main">
+  <div class="main" id="top">
     <div class="navbar">
       <div class="home-hamburger-container">
         <a href="index.html">
@@ -26,15 +26,14 @@
           </svg>
         </div>
       </div>
-      
       <div class="links" id="links">
-        <a href="index.html#Work" class="link" id="work-link">Work</a>
-        <a href="about.html" class="link" id="about-link">About</a>
-        <a href="contact.html" class="link" id="contact-link">Contact</a>
+        <a href="index.html#Work" class="link" id="work-link">Work<div class="link-line" id="work-line"></div></a>
+        <a href="about.html" class="link" id="about-link">About<div class="link-line" id="about-line"></div></a>
+        <a href="contact.html" class="link" id="contact-link">Contact<div class="link-line" id="contact-line"></div></a>
       </div>
     </div>
     <div class="jumbotron">
-      <div class="jumbo-text">
+      <div class="jumbo-text" id="jumbo-text">
         <h>Hi there!</h>
         <h>I'm Andrew Tumang</h>
         <h1>UX/UI Designer</h1>
@@ -42,13 +41,13 @@
         <br><br>
         Based in Los Angeles/Orange County, I am currently researching the intersection of disability and assistive technology.</p>
       </div>
-      <div class="jumbo-mockup">
+      <div class="jumbo-mockup" id="jumbo-mockup">
         <img src="images/index/screen-mockup.png">
         <img src="images/index/phone-overlay.png">
       </div>
     </div>
     <div class="arrow">
-      <a class="arrow-link" href="#Work"><img class="arrow-img" src="images/index/arrow.png"></a>
+      <a class="arrow-link" id="arrow-link" href="#Work"><img class="arrow-img" src="images/index/arrow.png"></a>
     </div>
   </div>
   <div id="Work">
@@ -131,7 +130,7 @@
   </div>
   <footer>
     <div class="footer-container">
-      <h class="footer-logo">AndrewTumang</h>
+      <a class="footer-logo" href="#top"><h>AndrewTumang</h></a>
       <div class="footer-icons">
         <a href="https://github.com/atumang"><img class="footer-icon" src="images/icons/github.svg"></a>
         <a href="https://www.linkedin.com/in/andrewtumang/"><img class="footer-icon" src="images/icons/linkedin.svg"></a>
@@ -142,7 +141,7 @@
       </p>
     </div>
   </footer>
-  
+  <script src="./js/index.js"></script>
   <script src="./js/navbar.js"></script>
 </body>
 </html>
