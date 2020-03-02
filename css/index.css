@@ -435,6 +435,10 @@ body {
 @media screen and (max-width: 568px) {
   .jumbo-text {
     justify-content: flex-end;
+    
+    opacity: 1.0;
+    transform: translateY(0px);
+    transition-duration: 0s;
   }
 }
 

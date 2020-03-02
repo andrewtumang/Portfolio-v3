@@ -58,3 +58,15 @@ for (var i = 0; i < navlinks.length; i++) {
 
 document.getElementById("hamburger").addEventListener("click", openCloseMenu, false);
 
+/* NO ANIMATIONS ON RESIZE */
+window.addEventListener("resize", function() {
+  var resizeElements = document.getElementsByClassName("resize");
+  for(var i = 0; i < resizeElements.length; i++) {
+    resizeElements[i].classList.add("animate-bad");
+  }
+  setTimeout(function() {
+    for(var i = 0; i < resizeElements.length; i++) {
+      resizeElements[i].classList.remove("animate-bad");
+    }
+  }, 400);
+});

@@ -170,4 +170,10 @@ a:hover, a:visited, a:link, a:active {
     display: none;
   }
 }
+
+/* NO ANIMATIONS ON RESIZE */
+
+.animate-bad {
+  animation: none !important;
+  transition-duration: 0s !important;
 }

@@ -46,12 +46,17 @@ body {
   height: 300px;
   
   border-radius: 5px;
+  filter: saturate(0.8);
 }
 
 #portrait {
-  transition: 2s ease-in-out;
+  transition: 1.5s ease-in-out;
   opacity: 0.0;
   transform: translate(0px, -20px);
+}
+
+#portrait:hover {
+  filter: saturate(1.25);
 }
 
 #portrait.slide {
@@ -76,7 +81,7 @@ body {
 }
 
 #name, #age, #location, #job {
-  transition: 2s ease-in-out;
+  transition: 1.5s ease-in-out;
   opacity: 0.0;
   transform: translate(40px, 0px);
 }
@@ -327,11 +332,30 @@ p {
   margin: 0 30px 20px 0;
   
   height: 75px;
+  transition: 0.3s ease-out;
+  cursor: default;
 }
 
 
+.brand-logo:hover {
+  transform: scale(1.05);
+}
 
 /* MEDIA QUERY BREAKPOINTS */
+
+@media screen and (min-width: 2000px) {
+  .header {
+    margin: 0 650px 40px;
+  }
+  .grid-container {
+    grid-template-columns: 650px 7fr 5fr 650px;
+  }
+  .bio {
+    padding: 40px 650px 40px;
+  }
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .header {
@@ -407,6 +431,11 @@ p {
 }
 
 @media screen and (max-width: 568px) {
+  #portrait, #name, #age, #location, #job, .preload {
+    opacity: 1.0;
+    transform: translate(0px, 0px) !important;
+    transition-duration: 0s;
+  }
   .header {
     margin: 0 26px 40px;
   }
