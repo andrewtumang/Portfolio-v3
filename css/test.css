@@ -1,0 +1,20 @@
+.mockup {
+  position: relative;
+  
+}
+
+.iphone-overlay {
+  position: absolute;
+  pointer-events: none;
+  
+  width: 354px;
+}
+
+iframe {
+  padding-top: 20px;
+  padding-left: 22px;
+  
+  width: 310px;
+  height: 672px;
+}
+

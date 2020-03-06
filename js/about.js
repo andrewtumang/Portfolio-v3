@@ -6,21 +6,21 @@ window.onload = function() {
   }, 0);
   setTimeout(function() {
     document.getElementById("name").classList.add("slide");
-  }, 300);
+  }, 150);
   setTimeout(function() {
     document.getElementById("age").classList.add("slide");
-  }, 450);
+  }, 300);
   setTimeout(function() {
     document.getElementById("location").classList.add("slide");
-  }, 600);
+  }, 450);
   setTimeout(function() {
     document.getElementById("job").classList.add("slide");
-  }, 750);
+  }, 600);
   setTimeout(function() {
     var preloads = document.getElementsByClassName("preload");
     for(var i = 0; i < preloads.length; i++) {
       preloads[i].classList.add("slide");
     }
-  }, 900);
+  }, 700);
 }
 
