@@ -183,6 +183,7 @@ body {
 .work-mockup:hover {
   filter: saturate(1);
   transform: translateY(-10px);
+  box-shadow: 5px 15px 20px rgba(0,0,0,0.2);
 }
 
 .work-mockup {
@@ -193,6 +194,7 @@ body {
   
   filter: saturate(0.7);
   transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
 .work-info {
@@ -448,6 +450,10 @@ body {
   }
   .work-mockup {
     width: 100%;
+    filter: saturate(1.0);
+  }
+  .work-mockup:hover {
+    transform: translateY(0px);
   }
   .arrow-link {
     width: 60px;
