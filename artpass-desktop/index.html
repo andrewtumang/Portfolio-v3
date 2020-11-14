@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/SVG/favicon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>ArtPass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="MkOG3xvxvculEQ2ZUNVf_52CdnKHvDZGGKrI6ylI2eY" />
+    <link rel="stylesheet" href="https://use.typekit.net/xqx8sto.css">
+    <script src="https://kit.fontawesome.com/df959595e9.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+  <a class="navbar-brand nav-hover" href="index.html">
+    <img src="images/logos/artpass-logo-dark.png" height="40" class="align-top nav-logo" alt="" loading="lazy">
+  </a>
+  <button class="navbar-toggler nav-hover" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item nav-hover active">
+        <a class="nav-link" href="#">Find Events</a>
+      </li>
+      <li class="nav-item nav-hover active">
+        <a class="nav-link" href="#">How It Works</a>
+      </li>
+      <li class="nav-item nav-hover active">
+        <a class="nav-link" href="#">Log In</a>
+      </li>
+      <li class="nav-item nav-hover active btn-lrg">
+        <a class="nav-link" href="#">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+  <div class="home-hero">
+    <div class="images">
+      <img src="images/index/music.png" class="hero-img" id="music-img2">
+      <img src="images/index/gallery.png" class="hero-img" id="gallery-img">
+      <img src="images/index/learn.png" class="hero-img" id="learn-img">
+      <img src="images/index/music.png" class="hero-img" id="music-img">
+    </div>
+    <div class="textbar">
+        <div class="search-text">
+            <h2 class="text1">
+                Grab a friend.&nbsp;
+            </h2>
+            <h2 class="text2" id="music">
+                Enjoy the show.
+            </h2>
+            <h2 class="text2" id="learn">
+                Learn something new.
+            </h2>
+            <h2 class="text2" id="gallery">
+                Appreciate art.
+            </h2>
+            <img src="images/logos/artpass-logo-dark.png" class="mobile-logo" alt="" loading="lazy">
+        </div>
+        <div class="searchbar">
+            <form class="form-inline my-2 my-lg-0 mr-auto bar">
+              <input class="search-bar1 form-control" type="search" placeholder="Search by event, type, or venue" aria-label="Search">
+              <input class="search-bar2 form-control" type="search" placeholder="Location" value="Irvine, CA" aria-label="Search">
+              <button class="btn btn-outline-success my-sm-0 search-btn" type="button" Onclick="setUrl()">Search</button>
+            </form>
+        </div>
+      </div>
+  </div>
+  <div class="main-container">
+    <div class="category-section">
+      <h2 class="section-title">Find Events By Category</h2>
+      <div class="category-box">
+        <div class="category-row-container">
+          <div class="category-row r1">
+            <div class="category" id="performing-arts">
+              <div class="cat-img">
+                <img src="images/SVG/performing.svg" class="category-icon">
+              </div>
+              <h3 class="category-title">Performing Arts</h3>
+            </div>
+            <div class="category" id="visual-arts">
+              <div class="cat-img">
+                <img src="images/SVG/visual.svg" class="category-icon" id="visual-icon">
+              </div>
+              <h3 class="category-title">Visual Arts</h3>
+            </div>      
+            <div class="category" id="family">
+              <div class="cat-img">
+                <img src="images/SVG/family.svg" class="category-icon">
+              </div>
+              <h3 class="category-title">Family</h3>
+            </div>
+          </div>
+          <div class="category-row r2">
+            <div class="category" id="classes-lectures">
+              <div class="cat-img">
+                <img src="images/SVG/classes.svg" class="category-icon">
+              </div>
+              <h3 class="category-title">Classes & Lectures</h3>
+            </div>      
+            <div class="category" id="festivals">
+              <div class="cat-img">
+                <img src="images/SVG/festivals.svg" class="category-icon">
+              </div>
+              <h3 class="category-title">Festivals</h3>
+            </div>      
+            <div class="category" id="Fundraisers">
+              <div class="cat-img">
+                <img src="images/SVG/fundraisers.svg" class="category-icon">
+              </div>
+              <h3 class="category-title">Fundraisers</h3>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="events-section">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="events-container events1">
+        
+      </div>
+    </div>
+    <div class="events-section">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="events-container events2">
+        
+      </div>
+    </div>
+  </div>
+  <div class="mobile-banner">
+      <img src="images/index/mockups.png" class="mockups">
+      <div class="mockup-info">
+        <h class="ad-text1">EXPLORE YOUR</h>
+        <h class="ad-text2">CREATIVE SIDE</h>
+        <div class="badges">
+          <img src="images/index/apple-badge.svg" class="download-badge apple">
+          <img src="images/index/google-badge.png" class="download-badge google">
+        </div>
+      </div>
+  </div>
+      
+  <footer>
+    <div class="footer-links">
+      <div class="footer-col learn-more">
+        <p class="content1">Learn More</p>
+        <p class="content2">Research</p>
+        <p class="content2">Design</p>
+        <p class="content2">Testing</p>
+      </div>
+      <div class="footer-col company">
+      <p class="content1">Company</p>
+        <p class="content2">Our Team</p>
+        <p class="content2">Careers</p>
+        <p class="content2">News</p>
+      </div>
+      <div class="footer-col community">
+      <p class="content1">Community</p>
+        <p class="content2">Guidelines</p>
+        <p class="content2">Support</p>
+        <p class="content2">Blog</p>
+      </div>
+      <div class="footer-col legal">
+      <p class="content1">Legal</p>
+        <p class="content2">Terms of Use</p>
+        <p class="content2">Copyright</p>
+        <p class="content2">Privacy</p>
+      </div>
+    </div>
+    <p class="copyright-text">© 2020 ArtPass Inc.</p>
+  </footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+
+<script src="js/index.js"></script>
+<script src="js/return-btn.js"></script>
+</body>
+  
+</html>

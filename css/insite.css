@@ -52,10 +52,11 @@ footer {
   background-image: linear-gradient(to bottom right, var(--gradient1), var(--gradient2)) !important;
 }
 
-p, h, h1 {
+p, h, h1, ul {
   font-family: Lato, sans-erif;
   font-style: normal;
 }
+
 
 
 
@@ -147,7 +148,7 @@ p, h, h1 {
 }
 
 h1 {
-  margin: 80px auto 30px;
+  margin: 60px auto 30px;
   width: var(--fullWidth);
   
   font-weight: 900;
@@ -155,9 +156,17 @@ h1 {
   color: var(--headerColor);
 }
 
-p.full-width {
+.full-width {
   margin: var(--defaultMargin);
   width: var(--fullWidth);
+  
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sub-width {
+  margin: var(--defaultMargin);
+  width: var(--subWidth);
   
   font-weight: 500;
   font-size: 16px;
