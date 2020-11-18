@@ -36,6 +36,10 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  user-select: none;
+}
+
 /* MAIN */
 
 .main {
@@ -264,6 +268,59 @@ iframe {
   width: calc(414px * var(--xdScale));
   height: calc(896px * var(--xdScale));
 }
+
+
+/* FULLSCREEN IMAGES */
+
+.fullscreen {
+  cursor: pointer;
+}
+
+.fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  z-index: 3;
+  
+  height: 100vh;
+  width: 100vw;
+  
+  background-color: rgb(0,0,0,0.7);
+}
+
+.close-btn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 4;
+  
+  font-size: 40px;
+  color: white;
+  
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.close-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.fullscreen-img {
+  height: auto;
+  max-width: 80%;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
 
 
 /* MEDIA QUERY BREAKPOINTS */
