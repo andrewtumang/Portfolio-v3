@@ -36,7 +36,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 0 200px 40px;
+  margin: 0 139 40px;
   
   width: 100%;
 }
@@ -133,14 +133,14 @@ body {
 .grid-container {
   display: grid;
   
-  grid-template-columns: 200px 7fr 5fr 200px;
+  grid-template-columns: 139px 7fr 5fr 139px;
   grid-template-rows: auto auto auto;
   
   width: 100%;
 }
 
 .bio {
-  padding: 40px 200px 40px;
+  padding: 40px 139px 40px;
   
   background-color: #F2F2F2;
   

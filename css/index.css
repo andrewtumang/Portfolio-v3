@@ -192,7 +192,7 @@ body {
   width: 600px;
   height: 488px;
   
-  filter: saturate(0.7);
+  filter: saturate(0.8);
   transition: 0.5s ease-in-out;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
@@ -231,7 +231,7 @@ body {
 }
 
 #insite-mockup {
-  background: radial-gradient(#A697FF, #4A35C7);
+  background: radial-gradient(#FF6369, #C52027);
 }
 
 .project-type {
@@ -270,7 +270,7 @@ body {
 }
 
 .insite-logo {
-  height: 70px;
+  height: 45px;
 }
 
 .project-title {

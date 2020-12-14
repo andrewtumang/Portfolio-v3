@@ -1,7 +1,7 @@
 :root {
-  --gradient1: #4A35C7;
-  --gradient2: #A697FF;
-  --headerColor: #4823A1;
+  --gradient1: #C52027;
+  --gradient2: #FF6369;
+  --headerColor: #84070C;
   --grey: #F2F2F2;
   
   --fullWidth: 750px;
@@ -90,7 +90,7 @@ p, h, h1, ul {
 .project-logo {
   display: block;
   margin: 0 auto;
-  width: 225px;
+  width: 300px;
 }
 
 .title > h {
