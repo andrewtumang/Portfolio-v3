@@ -178,7 +178,8 @@ h1 {
 /* IMAGE TYPES */
 
 .caption {
-  width: 100%;
+  margin: 20px auto 30px;
+  width: var(--fullWidth);
   
   text-align: center;
   font-weight: 500;
@@ -249,6 +250,61 @@ iframe {
 }
 
 
+/* FULLSCREEN IMAGES */
+
+.fullscreen {
+  cursor: pointer;
+}
+
+.fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  z-index: 3;
+  
+  height: 100%;
+  width: 100%;
+  
+  background-color: rgb(0,0,0,0.7);
+}
+
+.close-btn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 4;
+  
+  font-size: 40px;
+  color: white;
+  
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.close-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.fullscreen-img {
+  height: auto;
+  max-height: 100%;
+  max-width: 80%;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
 /* MEDIA QUERY BREAKPOINTS */
 
 @media screen and (max-width: 800px) {
@@ -260,8 +316,24 @@ iframe {
 }
 
 @media screen and (max-width: 568px) {
+  .project-info {
+    margin: 10px 0 0;
+  }
+  .title > h {
+    font-size: 20px;
+  }
+  .info-title {
+    font-size: 15px !important;
+  }
+  .project-info > p, p.full-width {
+    font-size: 15px;
+    line-height: 24px;
+  }
   .project-card {
     margin: 30px auto 50px;
+  }
+  .project-logo {
+    width: 250px;
   }
   #info1 {
     grid-column: 1 / 3;

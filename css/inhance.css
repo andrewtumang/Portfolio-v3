@@ -174,7 +174,8 @@ p.full-width {
 /* IMAGE TYPES */
 
 .caption {
-  width: 100%;
+  margin: 20px auto 30px;
+  width: var(--fullWidth);
   
   text-align: center;
   font-weight: 500;
@@ -283,8 +284,8 @@ iframe {
   
   z-index: 3;
   
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   
   background-color: rgb(0,0,0,0.7);
 }
@@ -309,6 +310,7 @@ iframe {
 
 .fullscreen-img {
   height: auto;
+  max-height: 100%;
   max-width: 80%;
   
   position: absolute;
@@ -348,6 +350,19 @@ iframe {
 }
 
 @media screen and (max-width: 568px) {
+  .project-info {
+    margin: 10px 0 0;
+  }
+  .title > h {
+    font-size: 20px;
+  }
+  .info-title {
+    font-size: 15px !important;
+  }
+  .project-info > p, p.full-width {
+    font-size: 15px;
+    line-height: 24px;
+  }
   .project-card {
     margin: 30px auto 50px;
   }
