@@ -10,6 +10,7 @@
     <meta name="google-site-verification" content="MkOG3xvxvculEQ2ZUNVf_52CdnKHvDZGGKrI6ylI2eY" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/df959595e9.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
     
     <!-- Hotjar Tracking Code for andrewtumang.com -->
     <script>
@@ -52,6 +53,7 @@
         <div class="contact-form">
           <h1>Send me a message</h1>
           <form action="https://getform.io/f/c4b5ddc3-838d-4b3f-bcd8-e921fcc7ed45" method="POST">
+              <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
               <label for="full-name">Name</label>
               <input type="text" name="name" id="full-name" required="">
               <label for="email-address">Email</label>
@@ -106,5 +108,13 @@
   
   <script src="./js/contact.js"></script>
   <script src="./js/navbar.js"></script>
+  <script>
+   grecaptcha.ready(function() {
+       grecaptcha.execute('6Lecg54gAAAAABH5NyQisD3pCZZp8Jkf-M2AAdMM', {action: 'homepage'})
+       .then(function(token) {
+         document.getElementById('captchaResponse').value = token;
+       });
+     });
+</script>
 </body>
 </html>
