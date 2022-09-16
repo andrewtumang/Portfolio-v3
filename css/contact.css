@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   position: relative;
   
-  height: auto;
+  height: 100%;
   width: 100%;
   
   background-image: linear-gradient(to bottom right, #360F77, #0D4E64);
@@ -85,7 +85,7 @@ footer{
 }
 
 #title, #window {
-  transition: 1s ease-in-out;
+  transition: .7s ease-in-out;
   opacity: 0.0;
   transform: translateY(-30px);
 }
