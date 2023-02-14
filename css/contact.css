@@ -30,7 +30,11 @@ body {
   flex-direction: column;
   position: relative;
   
+<<<<<<< HEAD
   min-height: 100%;
+=======
+  height: auto;
+>>>>>>> parent of 591bc5e (Under Construction)
   width: 100%;
   
   background-image: linear-gradient(to bottom right, #360F77, #0D4E64);
@@ -85,7 +89,7 @@ footer{
 }
 
 #title, #window {
-  transition: .7s ease-in-out;
+  transition: 1s ease-in-out;
   opacity: 0.0;
   transform: translateY(-30px);
 }

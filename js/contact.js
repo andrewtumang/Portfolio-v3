@@ -6,6 +6,6 @@ window.onload = function() {
   }, 0);
   setTimeout(function() {
     document.getElementById("window").classList.add("slide");
-  }, 0);
+  }, 300);
 }
 
